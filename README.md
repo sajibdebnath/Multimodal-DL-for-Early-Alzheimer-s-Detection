@@ -6,7 +6,7 @@
 
 > **Paper:** *A Multimodal Deep Learning Framework for Early Alzheimer's Disease Detection Using MRI, Cognitive Scores, and Lifestyle Data*  
 > Sajib Debnath, Md. Uzzal Mia, Arindam Kishor Biswas, Lipika Pal, Md. Sarwar Hosain, Tetsuya Shimamura  
-> GitHub: [uzzal2200/Multimodal-DL-for-Early-Alzheimer-s-Detection](https://github.com/uzzal2200/Multimodal-DL-for-Early-Alzheimer-s-Detection)
+> GitHub: [sajibdebnath/Multimodal-DL-for-Early-Alzheimer-s-Detection]([https://github.com/uzzal2200/Multimodal-DL-for-Early-Alzheimer-s-Detection](https://github.com/sajibdebnath/Multimodal-DL-for-Early-Alzheimer-s-Detection/tree/main))
 
 ---
 
