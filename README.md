@@ -37,6 +37,8 @@ This repository provides a **production-ready, modular implementation** of the *
 
 ```
 mdlf_alzheimer/
+├── Figures/
+│   └── 15 figures '.png'       # All Figures (from paper)
 ├── configs/
 │   └── default_config.yaml       # All hyperparameters (from paper Table 3)
 ├── data/
