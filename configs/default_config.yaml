@@ -1,0 +1,83 @@
+# ============================================================
+# MDLF Default Configuration
+# Multimodal Deep Learning Framework for Alzheimer's Detection
+# ============================================================
+
+data:
+  adni_root: "data/raw/ADNI"
+  oasis_root: "data/raw/OASIS"
+  processed_root: "data/processed"
+  mri_size: 224
+  n_slices_per_plane: 10          # axial, coronal, sagittal → 30 per subject
+  lifestyle_seq_len: 12           # months
+  lifestyle_n_features: 8
+  cognitive_n_features: 8         # MMSE, CDR, CDR-SB, CDR-M, CDR-O, age, sex, edu
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+  random_seed: 42
+  classes: ["CN", "MCI", "AD"]
+  n_classes: 3
+
+model:
+  # MRI Branch
+  mri_backbone: "efficientnet_b4"
+  mri_pretrained: true
+  mri_feature_dim: 512
+  mri_freeze_blocks: [0, 1, 2, 3, 4]   # blocks 0-4 frozen; 5-7 fine-tuned
+  # Cognitive Branch
+  cog_input_dim: 8
+  cog_hidden_dims: [256, 128, 64]
+  cog_feature_dim: 128
+  cog_dropout: 0.3
+  # Lifestyle Branch
+  life_input_dim: 8
+  life_seq_len: 12
+  bilstm_hidden_size: 128         # 256-d bidirectional output
+  life_feature_dim: 256
+  transformer_n_layers: 2
+  transformer_n_heads: 4
+  transformer_ff_dim: 512
+  transformer_dropout: 0.1
+  # Fusion
+  fusion_dim: 512
+  attention_dim: 64               # da = 64
+  # Classification Head
+  cls_hidden_dim: 256
+  cls_dropout: 0.4
+
+training:
+  batch_size: 32
+  max_epochs: 100
+  early_stopping_patience: 15
+  # Learning rates
+  lr_main: 1.0e-4
+  lr_backbone: 1.0e-5
+  # Optimizer
+  optimizer: "adam"
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_eps: 1.0e-8
+  weight_decay: 1.0e-5
+  # Scheduler
+  scheduler: "cosine_warm_restarts"
+  t0: 10
+  t_mult: 2
+  eta_min: 1.0e-7
+  # Loss
+  use_class_weights: true
+  # SHAP
+  shap_background_samples: 200
+
+augmentation:
+  horizontal_flip_prob: 0.5
+  rotation_degrees: 15
+  brightness_jitter: 0.1
+  contrast_jitter: 0.1
+  gaussian_noise_std: 0.01
+
+paths:
+  checkpoint_dir: "checkpoints"
+  results_dir: "results"
+  figures_dir: "results/figures"
+  logs_dir: "logs"
