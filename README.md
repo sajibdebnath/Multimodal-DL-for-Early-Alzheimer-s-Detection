@@ -71,7 +71,7 @@ mdlf_alzheimer/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/uzzal2200/Multimodal-DL-for-Early-Alzheimer-s-Detection.git
+git clone https://github.com/sajibdebnath/Multimodal-DL-for-Early-Alzheimer-s-Detection.git
 cd Multimodal-DL-for-Early-Alzheimer-s-Detection
 
 # 2. Create a virtual environment (recommended)
