@@ -6,7 +6,9 @@
 [![PeerJ Computer Science](https://img.shields.io/badge/Journal-PeerJ%20Computer%20Science-informational)](https://peerj.com/computer-science/)
 
 > **Paper:** *A Multimodal Deep Learning Framework for Early Alzheimer's Disease Detection Using MRI, Cognitive Scores, and Lifestyle Data*
+
 > Sajib Debnath, Md. Uzzal Mia, Arindam Kishor Biswas, Lipika Pal, Md. Sarwar Hosain, Tetsuya Shimamura
+
 > **Journal:** PeerJ Computer Science (AI Application Article)
 > **GitHub:** [sajibdebnath/Multimodal-DL-for-Early-Alzheimer-s-Detection](https://github.com/sajibdebnath/Multimodal-DL-for-Early-Alzheimer-s-Detection/tree/main)
 
