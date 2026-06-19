@@ -9,7 +9,6 @@
 
 > Sajib Debnath, et al.
 
-> **Journal:** PeerJ Computer Science (AI Application Article)
 > **GitHub:** [sajibdebnath/Multimodal-DL-for-Early-Alzheimer-s-Detection](https://github.com/sajibdebnath/Multimodal-DL-for-Early-Alzheimer-s-Detection/tree/main)
 
 ---
