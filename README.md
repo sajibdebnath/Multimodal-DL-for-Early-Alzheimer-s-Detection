@@ -386,9 +386,7 @@ If you use this code or the MDLF framework in your research, please cite:
 @article{debnath2026mdlf,
   title   = {A Multimodal Deep Learning Framework for Early Alzheimer's Disease
              Detection Using MRI, Cognitive Scores, and Lifestyle Data},
-  author  = {Debnath, Sajib and Mia, Md. Uzzal and Biswas, Arindam Kishor and
-             Pal, Lipika and Hosain, Md. Sarwar and Shimamura, Tetsuya},
-  journal = {PeerJ Computer Science},
+  author  = {Debnath, Sajib et al.},
   year    = {2026}
 }
 ```
